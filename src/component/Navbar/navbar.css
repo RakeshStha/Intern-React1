@@ -1,0 +1,19 @@
+.link {
+    margin-right: 20px;
+    font-size:  30px;
+    color: black;
+    font-weight: 700;
+}
+
+.a {
+    color: red;
+}
+
+
+
+.divs{
+    margin: 25px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
