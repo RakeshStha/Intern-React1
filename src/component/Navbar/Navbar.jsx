@@ -12,9 +12,9 @@ const Navbar = () => {
         
         }}>
            
-            <NavLink className="link" activeClassName="a" to = "/">Home</NavLink>
-            <NavLink className="link" activeClassName="a"  to = "/about">About</NavLink>
-            <NavLink className="link" activeClassName="a"  to = "/contact">Contact</NavLink>
+            <NavLink className="link" exact activeClassName="a" to = "/">Home</NavLink>
+            <NavLink className="link" exact activeClassName="a"  to = "/about">About</NavLink>
+            <NavLink className="link" exact activeClassName="a"  to = "/contact">Contact</NavLink>
         </div>
     )
 }
