@@ -1,0 +1,12 @@
+.footer {
+    margin: 0px;
+    height: 47px;
+    background-color: #218ac3;
+}
+
+h4 {
+    position: absolute;
+    left: 100px;
+    font-size: 20px;
+    padding: 10px;
+}

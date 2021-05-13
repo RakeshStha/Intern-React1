@@ -1,3 +1,110 @@
-.contact {
-    text-align: center;
+.content {
+    background-image: url('https://freellustrustrations.s3.us-east-2.amazonaws.com/free-images/freeimg_47841037freejpg850.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    color: rgb(11, 243, 243);
+    margin-bottom: 20px;
+}
+.form {
+    margin-top: 60px;
+    height: 380px;
+    width: 50%;
+    padding: 40px;
+   
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+
+
+
+.inside {
+    margin: 10px;
+}
+
+input {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    font-size: 16px;
+    display: block;
+    height: 35px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    position: absolute;
+    font-size: 20px;
+}
+
+.p{
+
+    margin-left: 30px;
+    color: rgb(11, 243, 243);
+    font-weight: 700;
+    font-size: 16px;
+    padding:8px;
+}
+
+textarea {
+
+    font-size: 16px;
+    display: block;
+
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+input:focus{
+    outline: none;
+    border-bottom:  2px solid#218ac3;
+    box-shadow: 10px 5px 10px 0px #218ac3;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+}
+
+.btn {
+    height: 35px;
+    width: 80%;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    background-color: #218ac3;
+}
+
+.btn:hover {
+    background-color: #21c35f;
 }
