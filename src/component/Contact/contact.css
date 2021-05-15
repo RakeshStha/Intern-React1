@@ -37,7 +37,9 @@ h1 {
     
 }
 
-
+.error{
+    color: red;
+}
 
 
 .inside {
@@ -107,4 +109,17 @@ input:focus{
 
 .btn:hover {
     background-color: #21c35f;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-content {
+    height: 200px;
+    width: 200px;
+    color: green;
 }
