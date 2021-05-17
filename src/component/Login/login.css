@@ -1,0 +1,67 @@
+body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.login-content {
+
+    margin: 20px;
+
+    padding: 20px;
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    height: 460px;
+    width: 500px;
+}
+
+.login-form {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-form .input input {
+    height: 36px;
+    font-size: 26px;
+    width: 100%;
+    border: none;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.input {
+    margin: 15px;
+}
+
+.container-button {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button {
+    height: 50px;
+    font-size: 26px;
+    margin: 30px;
+    width: 200px;
+   
+}
