@@ -14,8 +14,9 @@ const firebaseConfig = {
     measurementId: "G-9817R8EXGR"
   };
 
-  export var fire = firebase.initializeApp(firebaseConfig)
+firebase.initializeApp(firebaseConfig)
 
+export default firebase;
 
 //  const fire = firebase.initialApp(firebaseConfig);
 //  firebase.analytics();
