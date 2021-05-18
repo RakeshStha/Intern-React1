@@ -9,7 +9,7 @@
 }
 
 .body {
-    background-image: url(../img/home-background.jpg);
+    /* background-image: url("assets/images/home-background.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
