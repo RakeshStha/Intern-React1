@@ -1,20 +1,20 @@
 
-import React from 'react';
+import React, {useState, useEffect}from 'react';
 import socialMediaAuth from '../../service/auth';
 // import {GoogleLogin, GoogleLogout} from 'react-google-login';
 import '../Login/login.css';
-// import {app} from '../../config/firebase-config'
+import firebase from '../../config/firebase-config'
 
 import {facebookProvider, googleProvider} from '../../config/authMethod'
 
 const Login = () => {
-    // const [currentuser, setCurrentUser] = useState()
+    const [currentuser, setCurrentUser] = useState()
 
-    // useEffect(() => {
-    //     app.auth().onAuthStateChanged((user)=> {
-    //         setCurrentUser(user)
-    //     })
-    // }, [])
+    useEffect(() => {
+        firebase.auth().onAuthStateChanged((user)=> {
+            setCurrentUser(user)
+        })
+    }, [])
 
     const handleOnClick = async (provider) => {
         const res = await socialMediaAuth(provider);
@@ -38,13 +38,15 @@ const Login = () => {
       <div>
        <div className="login">
             {/* <div>
-                <h1>Welcome: {currentuser.displayName}</h1>
+            <img src={currentuser.photoURL} alt="avatar"/>
+                <h1>Name: {currentuser.displayName}</h1>
                 <h2>Email: {currentuser.email}</h2>
-                <img src={currentuser.photoURL} alt="avatar"/>
                 
+                <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
             </div>   */}
                         <div className="login-content">
                         <h1>Login</h1>
+
                         <button onClick={() => handleOnClick(googleProvider)}>Google</button>
                         <button onClick={() => handleOnClick(facebookProvider)}>Facebook</button>
                             
