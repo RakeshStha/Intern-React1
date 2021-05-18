@@ -1,8 +1,6 @@
 import React from 'react';
 import '../Home/home.css';
-
-
-
+import Pic from  '../img/pic.jpg'
 
 
 const Home = () => {
@@ -10,7 +8,7 @@ const Home = () => {
         <div className="home">
             <div className="body">
                 <div className="content-1">
-                    <img src="assets/images/pic.jpg" alt="My-Pic" height="85%" width="80%" />
+                    <img src={Pic} alt="My-Pic" height="85%" width="80%" />
                 </div>
                 <div className="content-2">
                         <h1>Hello there,</h1>
